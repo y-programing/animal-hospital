@@ -480,7 +480,8 @@ div#drawer_toggle {
 }
 
 #drawer_toggle.open span {
-  top: 29px;
+  top: 15px;
+  left: 1px;
   width: 35px;
   margin: 0;
 }
