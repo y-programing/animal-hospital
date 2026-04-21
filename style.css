@@ -25,7 +25,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 110px;
   padding: 0 20px;
 }
 
@@ -48,6 +48,11 @@ h2 {
 .l-header__li {
   font-weight: bolder;
   font-size: 20px;
+}
+
+.l-header__img {
+  width: 30px;
+  height: 30px;
 }
 
 .header-li__a {
@@ -513,6 +518,10 @@ div#drawer_toggle {
   .l-header__title {
     font-size: 15px;
   }
+
+  .l-header__img {
+    display: none;
+}
 
   #global_nav {
     display: none;
