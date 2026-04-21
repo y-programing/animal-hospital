@@ -481,7 +481,6 @@ div#drawer_toggle {
 
 #drawer_toggle.open span {
   top: 29px;
-  left: 14px;
   width: 35px;
   margin: 0;
 }
