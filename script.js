@@ -7,9 +7,9 @@
     });
 
 // トップへ戻るボタン
-const BottonToTop = document.querySelector(".c-topbtn")
+const ButtonToTop = document.querySelector(".c-topbtn")
 
-BottonToTop.addEventListener("click", function() {
+ButtonToTop.addEventListener("click", function() {
     window.scroll({ top: 0, behavior: "smooth" });
 });
 
