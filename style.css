@@ -420,6 +420,18 @@ small {
   padding-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */
 
+.c-topbtn {
+  position: fixed;
+  right: 1%;
+  bottom: 1%;
+  z-index: 10;
+}
+
+.c-topbtn__img {
+  width: 70px;
+  height: 70px;
+}
+
 
 /* ハンバーガーメニュー、閉じるボタンの実装 */
 
