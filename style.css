@@ -538,10 +538,18 @@ div#drawer_toggle {
   #global_nav {
     display: none;
     width: 100%;
-    height: 250px;
+    /* height: 250px; */
     margin-top: 59px;
     margin-right: 0;
     background: rgba(255, 255, 255, 0.5);
+    z-index: 100;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+
+  #global_nav.open {
+    display: block;
   }
 
   .health-h2 {
@@ -704,6 +712,11 @@ div#drawer_toggle {
     height: 25px;
   }
 
+  .c-topbtn__img {
+  width: 40px;
+  height: 40px;
+  }
+
   header nav {
     display: inline-block;
     position: absolute;
@@ -757,9 +770,5 @@ div#drawer_toggle {
 
   #drawer_toggle {
     display:inline-block;
-  }
-
-  #global_nav {
-  z-index: 100;
   }
 }
