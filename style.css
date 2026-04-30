@@ -181,11 +181,34 @@ h2 {
 .p-service__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  max-width: 950px;
+  margin: 0 auto;
 }
 
 .p-service {
   padding: 40px 0;
 }
+
+.p-service__img-container {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.p-service__img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition-duration: 0.3s;
+  }
+
+  .p-service__img-container img:hover {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+  opacity: 0.5;
+  }
 
 .p-service__img{
   width: 200px;
@@ -208,10 +231,10 @@ h2 {
 }
 
 .p-service__txt {
-  text-align: center;
-  max-width: 200px;
-  margin-right: auto;
-  margin-left: auto;
+  display: flex;
+  margin: 0;
+  text-align: left;
+  gap: 20px;
 }
 
 .p-news__list {
@@ -229,14 +252,14 @@ dt {
   margin-left: auto;
 }
 
-.dl-dd {
-  max-width: 500px;
-  padding: 10px 0;
-}
-
 .p-news {
   background-color: rgba(13, 150, 160, 0.1);
   padding: 50px 0;
+}
+
+.p-news__contents {
+  padding: 10px 0;
+  flex: 1;
 }
 
 .p-news__title {
@@ -244,18 +267,30 @@ dt {
   margin-bottom: 50px;
 }
 
+.p-news__list-wrapper {
+  max-width: 710px;
+  margin: 0 auto;
+}
+
 .p-news__list {
-  text-align: center;
+  display: flex;
+  gap: 20px;
+}
+
+.p-news__txt {
+  display: flex;
+  margin: 0;
+  text-align: left;
+  gap: 20px;
+}
+
+.p-news__txt dt {
+  width: 130px;
+  text-align: left;
 }
 
 time {
   padding: 10px 0;
-  margin: 0 auto;
-}
-
-.news-dl {
-  display: flex;
-  margin: 0 auto;
 }
 
 .p-access {
@@ -621,10 +656,19 @@ div#drawer_toggle {
     margin: 0 auto;
   }
 
+  .p-service__img-container img {
+    width: 75%;
+  }
+
   .p-service__img {
     width: 100%;
     height: 200px;
     display: block;
+    margin: 0 auto;
+  }
+
+  .p-service__txt {
+    max-width: 320px;
     margin: 0 auto;
   }
 
@@ -654,12 +698,22 @@ div#drawer_toggle {
   }
 
   .p-news__list {
+    display: block;
     text-align: center;
     margin: 20px 0;
   }
 
-  .news-dl {
-    display: inline-block;
+  .p-news__txt {
+    display: block;
+  }
+
+  .p-news__txt dt {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .p-news__contents {
+    max-width: 320px;
     margin: 0 auto;
   }
 
